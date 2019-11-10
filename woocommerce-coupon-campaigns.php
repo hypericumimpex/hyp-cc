@@ -1,14 +1,14 @@
 <?php
 /**
  * Plugin Name: HYP-CC Coupon Campaigns & Tracking
- * Version: 1.1.6
+ * Version: 1.1.8
  * Plugin URI: https://github.com/hypericumimpex/hyp-cc/
  * Description: Provides the ability to group coupons into campaigns - also offers better tracking and reporting of coupons as well as a bulk coupon generation tool.
  * Author: Romeo C.
  * Author URI: https://github.com/hypericumimpex/
  * Requires at least: 3.0
- * Tested up to: 4.8.1
- * WC tested up to: 3.6
+ * Tested up to: 5.2
+ * WC tested up to: 3.8
  * WC requires at least: 2.6
  * Woo: 506329:0d1018512ffcfcca48a43da05de22647
  */
@@ -68,7 +68,4 @@ function wc_coupon_campaigns_tracking_reports_path( $path, $name, $class ) {
     return $path;
 }
 add_filter( 'wc_admin_reports_path', 'wc_coupon_campaigns_tracking_reports_path', 10, 3 );
-
-
-
 endif;
